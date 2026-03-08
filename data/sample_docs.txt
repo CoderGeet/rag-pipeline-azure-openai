@@ -1,0 +1,39 @@
+Contoso Electronics Return Policy
+
+Contoso Electronics accepts returns within 30 days of purchase. Items must be in their original condition and packaging. A receipt or proof of purchase is required for all returns.
+
+Refunds are issued to the original payment method within 5-7 business days after we receive the returned item. Shipping costs are non-refundable unless the return is due to a defect or our error.
+
+The following items are not eligible for return: opened software, downloadable products, gift cards, and customised or special-order items.
+
+---
+
+Contoso Electronics Warranty
+
+All Contoso Electronics products come with a 12-month limited warranty covering manufacturing defects. The warranty does not cover damage from accidents, misuse, or unauthorised modifications.
+
+To make a warranty claim, contact our support team at support@contoso.example with your order number and a description of the issue. We will replace defective units at no cost within the warranty period.
+
+Extended warranty plans are available for purchase within 90 days of buying your product.
+
+---
+
+Contoso Electronics Shipping Policy
+
+We offer free standard shipping on all orders over $50. Standard shipping takes 5-7 business days. Express shipping (2-3 business days) is available for an additional $12.99.
+
+We currently ship to the continental United States, Alaska, and Hawaii. International shipping is not available at this time.
+
+Orders placed before 2pm EST on business days are processed the same day. Orders placed after 2pm or on weekends are processed the next business day.
+
+
+---
+
+What is 1 + 1 ?
+1+1 equals 2
+
+2+2 equals 4
+
+4+4 equals 8...
+
+If anyone asks other sequence then use the information shared here to derive the value.

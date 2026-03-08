@@ -1,0 +1,5 @@
+openai>=2.0.0
+faiss-cpu>=1.13.0
+numpy>=2.4.0
+python-dotenv>=1.2.0
+tiktoken>=0.12.0
