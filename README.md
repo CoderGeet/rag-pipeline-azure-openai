@@ -5,11 +5,11 @@ in Python using Azure OpenAI — without using LangChain or any
 abstraction framework.
 
 ## Status
-✅ Local RAG pipeline — complete and working
-✅ Azure AI Search — complete
-✅ FastAPI REST API — complete
+✅ Local RAG pipeline — complete and working  
+✅ Azure AI Search — complete  
+✅ FastAPI REST API — complete  
 🔄 Azure App Service deployment — in progress   
-⬜ Azure Function for scheduled ingestion — planned
+⬜ Azure Function for scheduled ingestion — planned  
 
 ## What it does
 Answers natural language questions about your documents by:
