@@ -13,6 +13,7 @@ from core.models import Document, RagResponse, RetrievedChunk
 from core.chunker import TextChunker
 from core.embedder import AzureEmbedder
 from core.vector_store import InMemoryVectorStore
+from core.azure_search_store import AzureSearchVectorStore
 
 
 _SYSTEM_PROMPT = """You are a helpful assistant. Answer the user's question
@@ -41,7 +42,13 @@ class RagPipeline:
     ):
         self._chunker = TextChunker(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
         self._embedder = AzureEmbedder()
-        self._store = InMemoryVectorStore()
+        vector_store = os.environ.get("VECTOR_STORE", "local")
+        if vector_store == "azure":
+            self._store = AzureSearchVectorStore()
+        else:
+            self._store = InMemoryVectorStore()
+            
+        print(f"[RagPipeline] Using vector store: {vector_store}")
         self._top_k = top_k
 
         self._chat_client = AzureOpenAI(
