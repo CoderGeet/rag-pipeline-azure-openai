@@ -6,8 +6,8 @@ abstraction framework.
 
 ## Status
 ✅ Local RAG pipeline — complete and working  
-🔄 Azure AI Search — planned  
-⬜ FastAPI REST API — planned  
+✅ Azure AI Search — complete
+🔄 FastAPI REST API — in progress 
 ⬜ Azure App Service deployment — planned  
 
 ## What it does
