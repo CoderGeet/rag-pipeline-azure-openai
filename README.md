@@ -28,16 +28,23 @@ User Query → Embed Query → Search Vector DB → Retrieve Chunks → LLM → 
 ```
 rag-demo/
 ├── core/
-│   ├── models.py          # Data classes (Document, Chunk, RagResponse)
-│   ├── chunker.py         # Splits documents into chunks
-│   ├── embedder.py        # Azure OpenAI embeddings
-│   ├── vector_store.py    # FAISS vector store
-│   └── rag_pipeline.py    # Orchestrates everything
+│   ├── __init__.py              # Makes core a Python package
+│   ├── azure_search_store.py    # Production vector store (Azure AI Search)
+│   ├── chunker.py               # Splits documents into chunks
+│   ├── embedder.py              # Azure OpenAI embeddings
+│   ├── models.py                # Data classes (Document, Chunk, RagResponse)
+│   ├── rag_pipeline.py          # Orchestrates everything
+│   └── vector_store.py          # Local vector store (FAISS)
 ├── data/
-│   └── sample_docs.txt    # Sample documents
-├── main.py                # Interactive CLI entry point
-├── inspect_vectors.py     # Tool to inspect vector store
-└── requirements.txt
+│   └── sample_docs.txt          # Sample documents for testing
+├── .env                         # Real credentials — never commit
+├── .env.example                 # Template — safe to commit
+├── .gitignore                   # Excludes .env and __pycache__
+├── api.py                       # FastAPI REST API entry point
+├── inspect_vectors.py           # Tool to inspect vector store locally
+├── main.py                      # Interactive CLI entry point
+├── requirements.txt             # All dependencies with pinned versions
+└── startup.sh                   # Azure App Service startup script
 ```
 
 ## Tech Stack
