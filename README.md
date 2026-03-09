@@ -8,14 +8,15 @@ abstraction framework.
 ✅ Local RAG pipeline — complete and working  
 ✅ Azure AI Search — complete  
 ✅ FastAPI REST API — complete  
-🔄 Azure App Service deployment — in progress   
+✅ Azure App Service deployment — complete  
+✅ GitHub Actions CI/CD — complete  
 ⬜ Azure Function for scheduled ingestion — planned  
 
 ## What it does
 Answers natural language questions about your documents by:
 1. Splitting documents into chunks
 2. Converting chunks to embedding vectors via Azure OpenAI
-3. Storing vectors in a FAISS index
+3. Storing vectors in FAISS (local) or Azure AI Search (production)
 4. Finding the most relevant chunks at query time
 5. Passing them to GPT-4o to generate a grounded answer
 
@@ -51,7 +52,11 @@ rag-demo/
 - Python 3.13
 - Azure OpenAI (text-embedding-ada-002 + gpt-4o)
 - FAISS (vector similarity search)
+- Azure AI Search (Production persistent vector store)
 - python-dotenv (configuration)
+- FastAPI (REST API Framework)
+- Azure App Service (Production Hosting)
+- GitHub Actions (CI/CD pipeline)
 
 ## Setup
 1. Clone the repo
